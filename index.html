@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summit Maze</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Ccircle cx=%228%22 cy=%228%22 r=%227%22 fill=%22%23ffd84a%22/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="game"></div>
+    <div id="vignette"></div>
+
+    <canvas id="minimap" width="240" height="240"></canvas>
+
+    <div id="hud">
+      <div class="hud-row"><span class="hud-label">SCORE</span><span id="hud-score">0</span></div>
+      <div class="hud-row"><span class="hud-label">LEVEL</span><span id="hud-level">1</span></div>
+      <div class="hud-row"><span class="hud-label">LEVENS</span><span id="hud-lives"></span></div>
+      <div id="hud-power"><div id="hud-power-bar"></div><span>SANCTIEPAKKET</span></div>
+    </div>
+
+    <div id="crosshair"></div>
+    <div id="toast"></div>
+    <div id="flash"></div>
+    <div id="eco"><span>ECO-ZONE · MAX 30</span></div>
+
+    <div id="overlay">
+      <div id="overlay-box">
+        <h1 id="overlay-title">SUMMIT MAZE</h1>
+        <p id="overlay-sub"></p>
+        <blockquote id="overlay-quote"></blockquote>
+        <div id="overlay-body"></div>
+        <p id="overlay-hint" class="blink">KLIK OM TE BEGINNEN</p>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
